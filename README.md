@@ -2,7 +2,8 @@
 ## 这是一个基于vue2.x 移动端侧滑删除dmeo
 >预览：
 
-![image](/src/assets/Preview.png)
+<img src="./src/assets/Preview.png" width="300">
+
 > 主要方法说明
 
 ### touch事件
