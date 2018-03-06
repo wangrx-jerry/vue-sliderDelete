@@ -2,8 +2,9 @@
      <div>
 		<h1> 这是一个移动端侧滑删除组件demo </h1>
 		<h3>-By&nbsp;wrx</h3>
-        <delete-slider v-for="(list, index) in dataList" :key="index" @deleteLine="deleteLine">
-          <h1 slot="line">{{'line' + (index + 1)}}</h1>
+		<h3><router-link :to="{name: 'login'}">To login</router-link></h3>
+        <delete-slider v-for="(list, index) in dataList" :key="index" @deleteLine="deleteLine(index)">
+          <h1 slot="line">{{list.name}}</h1>
           <h2>{{list.name}}</h2>
         </delete-slider> 
      </div>
@@ -14,16 +15,17 @@ import deleteSlider from '@/components/deleteTemplate.vue'
      data() {
      return {
 		dataList: [
-			{name: 'name'},
-			{name: 'name2'},
-			{name: 'name3'},
+			{name: 'line1'},
+			{name: 'line2'}, 
 			]
 		}
 	 },
      methods:{
         deleteLine (index){
-			this.dataList.splice(index, 1)
-		}      
+          console.log(index);
+          
+          this.dataList.splice(index, 1)
+        }      
      },
      components: {
         deleteSlider

@@ -78,6 +78,7 @@ export default {
             }
         },
         deleteLine (){
+            this.deleteSlider = "transform:translateX(0px)";
             this.$emit('deleteLine', this.index)
         }   
     }
