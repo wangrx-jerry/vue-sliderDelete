@@ -1,6 +1,6 @@
 # 组件说明
 ## 这是一个基于vue2.x 移动端侧滑删除dmeo
->预览：
+[预览](https://wangrx-jerry.github.io/vue-sliderDelete/dist/index.html)：
 
 <img src="./src/assets/Preview.png" width="300">
 

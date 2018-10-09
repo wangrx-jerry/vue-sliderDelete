@@ -2,6 +2,7 @@
      <div>
 		<h1> 这是一个移动端侧滑删除组件demo </h1>
 		<h3>-By&nbsp;wrx</h3>
+		<h3>Tips：需要在移动端设备上访问或者浏览器上使用调试模式切换到移动端开发进行预览</h3>
 		<h3><router-link :to="{name: 'login'}">To login</router-link></h3>
         <delete-slider v-for="(list, index) in dataList" :key="index" @deleteLine="deleteLine(index)">
           <h1 slot="line">{{list.name}}</h1>
